@@ -9,7 +9,7 @@
 
 string[] firstArray = new string[5] {"hello", "94", "12345", "world", "cat"};
 string[] finalArray = new string[firstArray.Length];
-int count = 0;
+
 //-------------------------------------------------------
 
 void FillingTheFinalArray(string[] firstArray, string[] finalArray)
@@ -24,4 +24,24 @@ void FillingTheFinalArray(string[] firstArray, string[] finalArray)
         }
     }
 }
+
+void PrintFinalArray(string[] finalArray)
+{
+    for (int i = 0; i < finalArray.Length; i++)
+    {
+        Console.Write($"{finalArray[i]} ");
+    }
+    Console.WriteLine();
+}
+
+//------------------------------------------------------------
+FillingTheFinalArray(firstArray, finalArray);
+PrintFinalArray(finalArray);
+
+
+
+
+
+
+
 
